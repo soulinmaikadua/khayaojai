@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_shake/widget/custom_list_widget.dart';
+import 'package:flutter_khayaojai/widget/custom_list_widget.dart';
 import 'package:shake/shake.dart';
 
 class ShakeScreen extends StatefulWidget {
@@ -58,7 +58,7 @@ class _ShakeScreenState extends State<ShakeScreen> {
             margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
             child: _random != ""
                 ? ListView.builder(
-                    scrollDirection: Axis.vertical,
+                    physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
                     itemCount: arr.length,
                     itemBuilder: (context, index) {

@@ -11,7 +11,10 @@ class CustomListWidget extends StatelessWidget {
           // radius: 50,
           backgroundImage: AssetImage(userData['image']),
         ),
-        title: Text(userData['name']),
+        title: Text(
+          userData['name'],
+          style: TextStyle(fontFamily: "NotoSan"),
+        ),
       ),
     );
   }

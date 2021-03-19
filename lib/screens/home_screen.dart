@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shake/screens/shake_screen.dart';
+
+import 'shake_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -42,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     scale: 1.4,
                     fit: BoxFit.fill,
                   ),
-                  SizedBox(width: 20),
+                  SizedBox(width: 30),
                   Text(
                     "Login With Google",
                     style: TextStyle(
