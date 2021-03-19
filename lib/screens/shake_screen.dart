@@ -31,7 +31,7 @@ class _ShakeScreenState extends State<ShakeScreen> {
         _random = randomNumber.toString();
         isShake = true;
       });
-      print(randomNumber);
+      print("print: rand ${randomNumber}");
     });
   }
 
@@ -39,7 +39,7 @@ class _ShakeScreenState extends State<ShakeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFFDC377C),
+        // backgroundColor: const Color(0xFFDC377C),
         centerTitle: true,
         elevation: 0,
         title: Text("Kha Yao Jai"),
@@ -49,9 +49,9 @@ class _ShakeScreenState extends State<ShakeScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Icon(
-            Icons.phonelink_ring_rounded,
-            size: 40,
-            color: isShake == true ? Colors.red : Colors.blue,
+            Icons.speaker_phone,
+            size: 60,
+            color: isShake == true ? Colors.pink : Colors.grey,
           ),
           SizedBox(height: 40),
           Container(
