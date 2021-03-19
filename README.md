@@ -7,6 +7,12 @@ A new Flutter project.
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
+# Tools
+
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- [Android Studio](https://developer.android.com/studio)
+- [VS Code](https://code.visualstudio.com/)
+- [XCode](https://developer.apple.com/xcode/)
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
