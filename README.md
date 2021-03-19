@@ -1,15 +1,15 @@
-# Kho Yao Jai
+# Kho Yao Jai || ຂະເຫຍົ່າໃຈ
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+# Tools || ດາວໂຫລດເຄື່ອງມື
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- [Android Studio](https://developer.android.com/studio)
+- [VS Code](https://code.visualstudio.com/)
+- [XCode](https://developer.apple.com/xcode/)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
