@@ -24,10 +24,15 @@ class TypeAndSendWidget extends StatelessWidget {
       SizedBox(width: 5),
       Expanded(
         flex: 0,
-        child: Icon(
-          Icons.send,
-          size: 30,
-          color: Colors.pink,
+        child: IconButton(
+          onPressed: () {
+            print("Hello World");
+          },
+          icon: Icon(
+            Icons.send,
+            size: 30,
+            color: Colors.pink,
+          ),
         ),
       ),
     ]);

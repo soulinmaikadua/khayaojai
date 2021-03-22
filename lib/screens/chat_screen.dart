@@ -49,6 +49,9 @@ class _ChatScreenState extends State<ChatScreen> {
                       image: widget.profileImage,
                       message: "Yes, I'm very happy...",
                     ),
+                    YourChatWidget(
+                      message: "We also happy...",
+                    ),
                   ],
                 ),
               ),
