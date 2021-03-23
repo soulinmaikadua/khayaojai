@@ -13,10 +13,10 @@ class _ShakeScreenState extends State<ShakeScreen> {
   String _random;
   bool isShake = false;
   var arr = [
-    {"id": 1, "image": "assets/profile.jpg", "name": "ສຸລີນ"},
-    {"id": 2, "image": "assets/profile.jpg", "name": "ສຸກ"},
-    {"id": 2, "image": "assets/profile.jpg", "name": "ສຸວັນ"},
-    {"id": 4, "image": "assets/profile.jpg", "name": "ກຳເງີນ"}
+    {"id": 1, "image": "assets/images/profile.jpg", "name": "ສຸລີນ"},
+    {"id": 2, "image": "assets/images/souk.jpg", "name": "ສຸກ"},
+    {"id": 2, "image": "assets/images/rose.jpg", "name": "Rose` BLACKPINK"},
+    {"id": 4, "image": "assets/images/xao.jpg", "name": "Taylor Swift"}
   ];
 
   @override
@@ -50,15 +50,34 @@ class _ShakeScreenState extends State<ShakeScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Icon(
-                Icons.speaker_phone,
-                size: 60,
-                color: isShake == true ? Colors.pink : Colors.grey,
-              ),
+              isShake == true
+                  ? Column(
+                      children: [
+                        Container(
+                          height: 70,
+                          width: 70,
+                          child: Image.asset(
+                            "assets/icons/heartbeat.png",
+                          ),
+                        ),
+                        Text(
+                          "ກຳລັງຄົ້ນຫາຄົນທີແມ່ນ...",
+                          style: TextStyle(
+                              fontFamily: "NotoSan", color: Colors.pink),
+                        )
+                      ],
+                    )
+                  : Icon(
+                      Icons.speaker_phone,
+                      size: 60,
+                      color: isShake == true ? Colors.pink : Colors.grey,
+                    ),
               SizedBox(height: 40),
               Container(
-                margin:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 10,
+                ),
                 child: isShake == true
                     ? ListView.builder(
                         physics: NeverScrollableScrollPhysics(),

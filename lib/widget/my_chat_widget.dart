@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyChatWidget extends StatelessWidget {
-  final String image;
   final String message;
-  MyChatWidget({Key key, @required this.image, this.message}) : super(key: key);
+  MyChatWidget({Key key, this.message}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,8 +34,8 @@ class MyChatWidget extends StatelessWidget {
           ),
           SizedBox(width: 10),
           CircleAvatar(
-            backgroundImage: AssetImage(image),
-            // child: Text("S"),
+            backgroundColor: Colors.pink,
+            child: Text("S"),
           ),
         ],
       ),

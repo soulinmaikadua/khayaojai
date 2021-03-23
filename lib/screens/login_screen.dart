@@ -14,7 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/jerry.gif"),
+            image: AssetImage("assets/images/jerry.gif"),
             fit: BoxFit.cover,
           ),
         ),
@@ -22,8 +22,14 @@ class _LoginScreenState extends State<LoginScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              backgroundColor: Colors.white,
+            Container(
+              height: 70,
+              width: 70,
+              padding: EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(70.0),
+              ),
               child: Image(image: AssetImage("assets/icons/heartbeat.png")),
             ),
             SizedBox(height: 160),

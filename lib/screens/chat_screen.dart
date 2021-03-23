@@ -39,22 +39,29 @@ class _ChatScreenState extends State<ChatScreen> {
                 child: ListView(
                   shrinkWrap: true,
                   children: [
-                    YourChatWidget(
+                    MyChatWidget(
                       message: "Print('Hello to the World of Code')",
                     ),
-                    MyChatWidget(
+                    YourChatWidget(
                       image: widget.profileImage,
-                      message: "OK, I will do it and learn it with you",
+                      message: "OK, I will do it and learn it from you",
+                    ),
+                    MyChatWidget(
+                      message: "Right, We will teach you",
                     ),
                     YourChatWidget(
+                      image: widget.profileImage,
+                      message: "Thanks",
+                    ),
+                    MyChatWidget(
                       message:
                           "Are you have happy with what we teach today? We'll see you soon...",
                     ),
-                    MyChatWidget(
+                    YourChatWidget(
                       image: widget.profileImage,
                       message: "Yes, I'm very happy...",
                     ),
-                    YourChatWidget(
+                    MyChatWidget(
                       message: "We also happy...",
                     ),
                   ],
