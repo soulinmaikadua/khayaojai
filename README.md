@@ -11,6 +11,11 @@ A new Flutter project.
 - [VS Code](https://code.visualstudio.com/)
 - [XCode](https://developer.apple.com/xcode/)
 
+# Videos
+
+- [ຕິດຕັ້ງ Flutter ໃນເຄື່ອງ Windows](https://www.youtube.com/watch?v=LvJE5468xtg)
+- [ຕິດຕັ້ງ Flutter ໃນເຄື່ອງ macOS](https://www.youtube.com/watch?v=_kg_otCgiBM)
+
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.

@@ -40,14 +40,16 @@ class _ChatScreenState extends State<ChatScreen> {
                   shrinkWrap: true,
                   children: [
                     MyChatWidget(
-                      message: "Print('Hello to the World of Code')",
+                      message:
+                          "Hi, there \nPrint('Hello to the World of Code')",
                     ),
                     YourChatWidget(
                       image: widget.profileImage,
-                      message: "OK, I will do it and learn it from you",
+                      message: "OK, I will print it out",
                     ),
                     MyChatWidget(
-                      message: "Right, We will teach you",
+                      message:
+                          "Right! Today we're going to teach you about flutter",
                     ),
                     YourChatWidget(
                       image: widget.profileImage,
