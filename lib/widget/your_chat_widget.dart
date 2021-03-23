@@ -15,6 +15,7 @@ class YourChatWidget extends StatelessWidget {
           ),
           SizedBox(width: 10),
           Container(
+            width: MediaQuery.of(context).size.width * 0.65,
             padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: Colors.pink,

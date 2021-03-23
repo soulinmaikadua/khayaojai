@@ -44,32 +44,40 @@ class _ShakeScreenState extends State<ShakeScreen> {
         elevation: 0,
         title: Text("Kha Yao Jai"),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Icon(
-            Icons.speaker_phone,
-            size: 60,
-            color: isShake == true ? Colors.pink : Colors.grey,
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.speaker_phone,
+                size: 60,
+                color: isShake == true ? Colors.pink : Colors.grey,
+              ),
+              SizedBox(height: 40),
+              Container(
+                margin:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                child: isShake == true
+                    ? ListView.builder(
+                        physics: NeverScrollableScrollPhysics(),
+                        shrinkWrap: true,
+                        itemCount: arr.length,
+                        itemBuilder: (context, index) {
+                          print(_random);
+                          print(arr);
+                          return CustomListWidget(userData: arr[index]);
+                        },
+                      )
+                    : Text(
+                        "ສັ່ນໂທລະສັບເພື່ອຫາຄົນທີຖືກໃຈ",
+                        style: TextStyle(fontFamily: "NotoSan"),
+                      ),
+              )
+            ],
           ),
-          SizedBox(height: 40),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-            child: _random != ""
-                ? ListView.builder(
-                    physics: NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: arr.length,
-                    itemBuilder: (context, index) {
-                      print(_random);
-                      print(arr);
-                      return CustomListWidget(userData: arr[index]);
-                    },
-                  )
-                : CustomListWidget(userData: arr[int.parse(_random)]),
-          )
-        ],
+        ),
       ),
     );
   }

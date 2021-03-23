@@ -13,6 +13,7 @@ class MyChatWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Container(
+            width: MediaQuery.of(context).size.width * 0.65,
             padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: Colors.white,

@@ -6,8 +6,11 @@ import 'package:flutter_khayaojai/widget/your_chat_widget.dart';
 class ChatScreen extends StatefulWidget {
   final String userName;
   final String profileImage;
-  ChatScreen({Key key, @required this.userName, @required this.profileImage})
-      : super(key: key);
+  ChatScreen({
+    Key key,
+    @required this.userName,
+    @required this.profileImage,
+  }) : super(key: key);
   @override
   _ChatScreenState createState() => _ChatScreenState();
 }
@@ -28,12 +31,13 @@ class _ChatScreenState extends State<ChatScreen> {
         child: Container(
           margin: const EdgeInsets.symmetric(
             horizontal: 16,
-            vertical: 10,
+            vertical: 0,
           ),
           child: Column(
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
+                  shrinkWrap: true,
                   children: [
                     YourChatWidget(
                       message: "Print('Hello to the World of Code')",
@@ -43,7 +47,8 @@ class _ChatScreenState extends State<ChatScreen> {
                       message: "OK, I will do it and learn it with you",
                     ),
                     YourChatWidget(
-                      message: "Are you have happy with what we teach today?",
+                      message:
+                          "Are you have happy with what we teach today? We'll see you soon...",
                     ),
                     MyChatWidget(
                       image: widget.profileImage,

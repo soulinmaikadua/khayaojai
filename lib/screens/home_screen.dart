@@ -12,29 +12,21 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        // decoration: BoxDecoration(
-        //   image: DecorationImage(
-        //     image: AssetImage("assets/background.jpg"),
-        //     fit: BoxFit.cover,
-        //   ),
-        // ),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/jerry.gif"),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
-              backgroundImage: AssetImage("assets/icons/heartbeat.png"),
+              backgroundColor: Colors.white,
+              child: Image(image: AssetImage("assets/icons/heartbeat.png")),
             ),
-            // Icon(
-            //   Icons.favorite_outlined,
-            //   color: Colors.pink,
-            //   size: 70,
-            // ),
-            SizedBox(height: 100),
-            Center(
-              child: Text("Hello World"),
-            ),
-            SizedBox(height: 40),
+            SizedBox(height: 160),
             GestureDetector(
               onTap: () {
                 Navigator.push(
