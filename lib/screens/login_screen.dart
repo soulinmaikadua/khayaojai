@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'shake_screen.dart';
 
-class HomeScreen extends StatefulWidget {
+class LoginScreen extends StatefulWidget {
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
