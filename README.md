@@ -16,6 +16,7 @@ A new Flutter project.
 - [ຕິດຕັ້ງ Flutter ໃນເຄື່ອງ Windows](https://www.youtube.com/watch?v=LvJE5468xtg)
 - [ຕິດຕັ້ງ Flutter ໃນເຄື່ອງ macOS](https://www.youtube.com/watch?v=_kg_otCgiBM)
 - [ຄຳສັ່ງກວດສອບການຕິດຕັ້ງ Flutter](https://www.youtube.com/watch?v=7ucBHSP3lLU)
+- [ສ້າງ Android Emulator](https://www.youtube.com/watch?v=7KdGmg4mTpI)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
