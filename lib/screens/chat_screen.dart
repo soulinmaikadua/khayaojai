@@ -29,7 +29,7 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
       body: SafeArea(
         child: Container(
-          margin: const EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: 16,
             vertical: 0,
           ),
