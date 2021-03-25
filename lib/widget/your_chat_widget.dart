@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class YourChatWidget extends StatelessWidget {
-  final String image;
-  final String message;
   YourChatWidget({
     Key key,
     @required this.image,
     @required this.message,
   }) : super(key: key);
+  final String image;
+  final String message;
   @override
   Widget build(BuildContext context) {
     return Container(

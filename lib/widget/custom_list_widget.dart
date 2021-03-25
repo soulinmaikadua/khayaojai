@@ -11,10 +11,11 @@ class CustomListWidget extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (context) => ChatScreen(
-                    userName: userData['name'],
-                    profileImage: userData['image'],
-                  )),
+            builder: (context) => ChatScreen(
+              userName: userData['name'],
+              profileImage: userData['image'],
+            ),
+          ),
         );
       },
       child: Card(
