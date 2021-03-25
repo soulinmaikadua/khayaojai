@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_khayaojai/widget/custom_list_widget.dart';
 import 'package:shake/shake.dart';
@@ -10,7 +8,6 @@ class ShakeScreen extends StatefulWidget {
 }
 
 class _ShakeScreenState extends State<ShakeScreen> {
-  String _random;
   bool isShake = false;
   var arr = [
     {"id": 1, "image": "assets/images/profile.jpg", "name": "ສຸລີນ"},
@@ -24,14 +21,9 @@ class _ShakeScreenState extends State<ShakeScreen> {
     // TODO: implement initState
     super.initState();
     ShakeDetector detector = ShakeDetector.autoStart(onPhoneShake: () {
-      // Do stuff on phone shake
-      var random = new Random();
-      int randomNumber = random.nextInt(4);
       setState(() {
-        _random = randomNumber.toString();
         isShake = true;
       });
-      print("print: rand ${randomNumber}");
     });
   }
 
@@ -84,7 +76,6 @@ class _ShakeScreenState extends State<ShakeScreen> {
                         shrinkWrap: true,
                         itemCount: arr.length,
                         itemBuilder: (context, index) {
-                          print(_random);
                           print(arr);
                           return CustomListWidget(userData: arr[index]);
                         },
