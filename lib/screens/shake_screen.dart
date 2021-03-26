@@ -8,7 +8,7 @@ class ShakeScreen extends StatefulWidget {
 }
 
 class _ShakeScreenState extends State<ShakeScreen> {
-  bool isShake = false;
+  bool isShake = true;
   var arr = [
     {"id": 1, "image": "assets/images/profile.jpg", "name": "ສຸລີນ"},
     {"id": 2, "image": "assets/images/souk.jpg", "name": "ສຸກ"},
