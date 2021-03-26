@@ -31,16 +31,18 @@ class _ShakeScreenState extends State<ShakeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // backgroundColor: const Color(0xFFDC377C),
         centerTitle: true,
         elevation: 0,
         title: Text("Kha Yao Jai"),
       ),
       body: SafeArea(
-        child: Center(
+        child: Container(
+          alignment: Alignment.center,
+          margin: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 10,
+          ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               isShake == true
                   ? Column(
@@ -62,29 +64,23 @@ class _ShakeScreenState extends State<ShakeScreen> {
                   : Icon(
                       Icons.speaker_phone,
                       size: 60,
-                      color: isShake == true ? Colors.pink : Colors.grey,
+                      color: Colors.grey,
                     ),
               SizedBox(height: 40),
-              Container(
-                margin: const EdgeInsets.symmetric(
-                  horizontal: 16,
-                  vertical: 10,
-                ),
-                child: isShake == true
-                    ? ListView.builder(
-                        physics: NeverScrollableScrollPhysics(),
-                        shrinkWrap: true,
-                        itemCount: arr.length,
-                        itemBuilder: (context, index) {
-                          print(arr);
-                          return CustomListWidget(userData: arr[index]);
-                        },
-                      )
-                    : Text(
-                        "ສັ່ນໂທລະສັບເພື່ອຫາຄົນທີຖືກໃຈ",
-                        style: TextStyle(fontFamily: "NotoSan"),
-                      ),
-              )
+              isShake == true
+                  ? ListView.builder(
+                      physics: NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: arr.length,
+                      itemBuilder: (context, index) {
+                        print(arr);
+                        return CustomListWidget(userData: arr[index]);
+                      },
+                    )
+                  : Text(
+                      "ສັ່ນໂທລະສັບເພື່ອຫາຄົນທີຖືກໃຈ",
+                      style: TextStyle(fontFamily: "NotoSan"),
+                    ),
             ],
           ),
         ),
