@@ -23,13 +23,13 @@ A new Flutter project.
 
 
 run app
-```flutter run```
+```$ flutter run```
 
 build apk 
-```flutter build apk```
+```$ flutter build apk```
 
 build app bundle
-```flutter build appbundle```
+```$ flutter build appbundle```
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
